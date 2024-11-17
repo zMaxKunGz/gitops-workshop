@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: odds-conference
+  labels:
+    app: odds-conference
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: odds-conference
+  template:
+    metadata:
+      labels:
+        app: odds-conference
+    spec:
+      containers:
+      - name: odds-conference
+        image: atbb/odds-conference:2024
