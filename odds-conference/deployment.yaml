@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
       - name: odds-conference
-        image: atbb/odds-conference:2024
+        image: atbb/odds-conference:2025
